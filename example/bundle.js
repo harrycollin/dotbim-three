@@ -52355,8 +52355,8 @@
 	        }
 	    }
 	    const newMesh = new Mesh(geometry, material);
-	    newMesh.position.set(element.vector.x, element.vector.y, element.vector.z);
 	    newMesh.quaternion.set(element.rotation.qx, element.rotation.qy, element.rotation.qz, element.rotation.qw);
+	    newMesh.position.set(element.vector.x, element.vector.y, element.vector.z);
 	    newMesh.userData.Guid = element.guid;
 	    return newMesh;
 	}
