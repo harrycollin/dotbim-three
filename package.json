@@ -1,0 +1,6 @@
+{
+    "name": "dotbim-three-loader",
+    "version": "1.0.0",
+    "workspaces": ["example", "loader"],
+    "private": true
+}

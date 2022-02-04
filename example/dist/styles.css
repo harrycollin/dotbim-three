@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+input[type=file] {
+    position: absolute;
+    cursor: pointer;
+    width: 180px;
+    height: 34px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+input[type=file]:before {
+    width: 158px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    content: 'Select your file';
+    display: inline-block;
+    background: #E95A32;
+    border: none;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.properties {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: break-spaces;
+    font-family: Consolas, serif;
+}
