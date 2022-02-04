@@ -1,15 +1,12 @@
 // noinspection JSUnusedGlobalSymbols
 
-import resolve from '@rollup/plugin-node-resolve'; // locate and bundle dependencies in node_modules (mandatory)
+import resolve from '@rollup/plugin-node-resolve';
 
 export default {
-    input: 'main.js',
+    input: 'src/main.js',
     output: {
-        dir: 'dist',
+        file: 'bundle.js',
         format: 'iife',
-        // globals: {
-        //     "three": "three"
-        // }
     },
     plugins: [resolve()]
 };
