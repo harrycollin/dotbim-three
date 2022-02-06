@@ -51,8 +51,10 @@ function loadMesh(mesh: Mesh, element: Element){
     }
 
     const newMesh = new THREE.Mesh( geometry, material );
+
     newMesh.quaternion.set(element.rotation.qx, element.rotation.qy, element.rotation.qz, element.rotation.qw)
     newMesh.position.set(element.vector.x, element.vector.y, element.vector.z)
+
     newMesh.userData.Guid = element.guid;
     return newMesh;
 }
